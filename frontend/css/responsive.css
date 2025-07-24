@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+  .menu-mobile {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+  }
+  .nav li {
+    display: block;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+}
