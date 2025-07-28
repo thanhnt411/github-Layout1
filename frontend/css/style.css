@@ -444,7 +444,32 @@
     margin-right: 35px;
 }
 
+.name-heading li  {
+    list-style: none;
+}
+
+.name-heading li a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .footer-choice {
     margin-right: 125px;
 }
+.name-choice li  {
+    list-style: none;
+}
 
+.name-choice li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.name-app li  {
+    list-style: none;
+}
+
+.name-app li a {
+    color: #fff;
+    text-decoration: none;
+}
