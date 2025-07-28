@@ -15,4 +15,85 @@
     display: flex;
   }
 
+  .banner {
+    margin-top: 0;
+  }
+
+  .banner-box {
+    margin: auto;
+  }
+
+  .section-sub-heading {
+    line-height: 1.2;
+  }
+
+  .skill-left::after {
+    width: 0;
+  }
+
+  .skill-left {
+    width: 100%;
+  }
+
+  .content-stat-wrap {
+    display: block;
+  }
+
+  .content-career-top, .content-career-bottom{
+    display: block;
+  }
+
+  .career-box {
+    width: 100%;
+  }
+
+  .content-testimonials {
+    font-size: 15px;
+    padding: 5px 5px;
+  }
+
+  .badge-logo-wrap {
+    display: block;
+  }
+
+  .badge-logo {
+    width: 100%;
+  }
+
+  .badge-logo1 {
+    text-align: center;  
+  }
+
+  .badge-logo2 {
+    margin-left: 50px;
+  }
+
+  .badge-logo3 {
+    margin-left: 60px;
+  }
+
+  .badge-logo4 {
+    text-align: center;
+  }
+
+  .footer-wrap {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-infor {
+    margin-right: 0;
+  }
+
+  .footer-contact {
+    margin-right: 0;
+  }
+
+  .footer-heading {
+    margin-right: 0;
+  }
+
+  .footer-choice {
+    margin-right: 0;
+  }
 }
