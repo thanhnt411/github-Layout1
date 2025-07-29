@@ -22,7 +22,7 @@
     left: 0;
     right: 0;
     padding-top: 20px;
-    z-index: 1000;
+    z-index: 2;
 }
 
 .header-wrap {
@@ -39,16 +39,16 @@
     height: 30px;
 }
 
-.menu-mobile {
+.ham {
     display: none;
-    font-size: 26px;
     cursor: pointer;
+    padding: 20px;
+    text-align: center;
 }
 
 .menu-icon {
-    color: #1d1d1d;
-    font-size: 20px;
-    line-height: 46px;
+    height: 30px;
+    width: 30px;
 }
 
 .nav {
@@ -68,6 +68,43 @@
 
 .nav li:hover a {
     color: #10c9c3;
+}
+
+.header-wrap-sp {
+    display: none;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.wrapper {
+    width: 30%;
+    height: 100%;
+    background-color: #838383;
+    position: relative;
+    top: 100px;
+    right: -10000px;
+}
+
+.nav-menu-mobile {
+    padding: 10px;
+}
+.nav-menu-mobile li {
+    list-style: none;
+    padding: 8px;
+    border-bottom: 1px solid #252525;
+}
+
+.nav-menu-mobile li a{
+    text-decoration: none;
+    color: #1d1d1d;
+    font-size: 15px;
+    transition: 0.2s;
 }
 /*END Header*/
 
@@ -412,6 +449,7 @@
 }
 /*Content Contact*/
 
+/*START Footer*/
 .footer{
     background-color: #141414;
     color: #fff;
@@ -472,4 +510,108 @@
 .name-app li a {
     color: #fff;
     text-decoration: none;
+}
+/*END Footer*/
+
+
+/*Responsive*/
+@media (max-width: 768px) {
+  .menu-mobile {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+  
+  .ham {
+    display: block;
+  }
+  .nav-menu-mobile.active {
+    right: 0;
+    visibility: visible;
+    z-index: 3;
+  }
+  
+  .banner {
+    margin-top: 0;
+  }
+
+  .banner-box {
+    margin: auto;
+  }
+
+  .section-sub-heading {
+    line-height: 1.2;
+  }
+
+  .skill-left::after {
+    width: 0;
+  }
+
+  .skill-left {
+    width: 100%;
+  }
+
+  .content-stat-wrap {
+    display: block;
+  }
+
+  .content-career-top, .content-career-bottom{
+    display: block;
+  }
+
+  .career-box {
+    width: 100%;
+  }
+
+  .content-testimonials {
+    font-size: 15px;
+    padding: 5px 5px;
+  }
+
+  .badge-logo-wrap {
+    display: block;
+  }
+
+  .badge-logo {
+    width: 100%;
+  }
+
+  .badge-logo1 {
+    text-align: center;  
+  }
+
+  .badge-logo2 {
+    margin-left: 50px;
+  }
+
+  .badge-logo3 {
+    margin-left: 60px;
+  }
+
+  .badge-logo4 {
+    text-align: center;
+  }
+
+  .footer-wrap {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-infor {
+    margin-right: 0;
+  }
+
+  .footer-contact {
+    margin-right: 0;
+  }
+
+  .footer-heading {
+    margin-right: 0;
+  }
+
+  .footer-choice {
+    margin-right: 0;
+  }
 }

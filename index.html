@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./frontend/css/style.css"/>
-    <link rel="stylesheet" href="./frontend/css/responsive.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -21,10 +20,10 @@
             <div class="logo">
               <img src="./frontend/image/logo_guess_transparent.png" alt="LOGO" />
             </div>
-            <div class="menu-mobile" id="toggle">
-              <i class=" menu-icon fa-solid fa-bars"></i>
+            <div class="ham" id="toggle">
+             <i class="fas fa-bars menu-icon"></i>
             </div>
-            <ul class="nav" id="nav">
+            <ul class="nav">
               <li><a href="">HOME</a></li>
               <li><a href="#section-About">ABOUT</a></li>
               <li><a href="#section-work">WORK</a></li>
@@ -34,7 +33,20 @@
               <li><a href="#section-contact">CONTACT</a></li>
             </ul>
           </div>
+          <div class="header-wrap-sp" id="mobileMenu">
+            <div class="wrapper">
+              <ul class="nav-menu-mobile" id="mobile-nav">
+                <li><a href="">HOME</a></li>
+                <li><a href="#section-About">ABOUT</a></li>
+                <li><a href="#section-work">WORK</a></li>
+                <li><a href="#section-process">PROCESS</a></li>
+                <li><a href="#section-services">SERVICES</a></li>
+                <li><a href="#section-testimonials">TESTIMONIALS</a></li>
+                <li><a href="#section-contact">CONTACT</a></li>
+              </ul>
+            </div>
           </div>
+        </div>
       </div>
       <!--END Header-->
 
@@ -394,9 +406,5 @@
       <!--END Footer-->
     </div>
   </body>
-  <script>
-    document.querySelector('.menu-mobile').addEventListener('click', function () {
-    document.querySelector('.nav').classList.toggle('active');
-  });
-  </script>
+  <script src="./frontend/js/mobile.js"></script>
 </html>

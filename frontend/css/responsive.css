@@ -10,11 +10,7 @@
   .nav li {
     display: block;
   }
-
-  .nav.active {
-    display: flex;
-  }
-
+  
   .banner {
     margin-top: 0;
   }
