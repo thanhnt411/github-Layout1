@@ -621,12 +621,14 @@
     }
 
     .badge-logo-wrap {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        align-items: center;
     }
 
     .badge-logo {
-   
+        margin-bottom: 20px;
     }
 
     .footer-wrap {
