@@ -46,15 +46,22 @@
     text-align: center;
 }
 
-.menu-icon {
+.menu-icon-open, .menu-icon-close {
     height: 30px;
     width: 30px;
 }
 
 .nav {
-    float: right;
+  
 }
 
+.nav-logo {
+    display: none;
+}
+
+.nav-logo img {
+    height: 30px;
+}
 .nav li {
     display: inline-block;
 }
@@ -68,27 +75,6 @@
 
 .nav li:hover a {
     color: #10c9c3;
-}
-
-.header-wrap-sp {
-    display: none;
-    background-color: #fff;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    transition: 0.5s;
-    visibility: hidden;
-}
-
-.wrapper {
-    width: 30%;
-    height: 100%;
-    background-color: #838383;
-    position: relative;
-    top: 100px;
-    right: -10000px;
 }
 
 .nav-menu-mobile {
@@ -105,7 +91,7 @@
     color: #1d1d1d;
     font-size: 15px;
     transition: 0.2s;
-}
+} 
 /*END Header*/
 
 /*START Banner*/
@@ -275,10 +261,15 @@
 .grid-icon {
     font-size: 40px;
     color: #838383;
+    opacity: 0;
 }
 
 .grid-box:hover {
     background-color: #252525;
+}
+
+.grid-icon:hover {
+    opacity: 1;
 }
 
 
@@ -385,15 +376,15 @@
 }
 
 .badge-logo2 {
-    margin-top: 33px;
+    
 }
 
 .badge-logo3 {
-    margin-top: 24px;
+   
 }
 
 .badge-logo4 {
-    margin-top: 42px;
+
 }
 
 /*END Content-Badge-Logo*/
@@ -474,8 +465,21 @@
     opacity: 0.5;
 }
 
+.footer-title {
+    display: flex;
+}
+
 .footer-contact {
     margin-right: 135px;
+}
+
+.contact-text li {
+    list-style: none;
+}
+
+.contact-text li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .footer-heading {
@@ -516,102 +520,137 @@
 
 /*Responsive*/
 @media (max-width: 768px) {
-  .menu-mobile {
-    display: block;
-  }
+    .no-scroll {
+        overflow: hidden;
+    }
+    
+    .ham {
+        display: block;
+        position: relative;
+        z-index: 1000;
+    }
 
-  .nav {
-    display: none;
-  }
-  
-  .ham {
-    display: block;
-  }
-  .nav-menu-mobile.active {
-    right: 0;
-    visibility: visible;
-    z-index: 3;
-  }
-  
-  .banner {
-    margin-top: 0;
-  }
+    .menu-icon-close {
+        visibility: hidden;
+    }
+    .nav {
+        /*display: none;*/
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        visibility: hidden;
+        transition: 0.7s ease-in-out;
+    }
+    
+    .nav-logo {
+      display: inline-block;
+      margin: 30px 10px;
+    }
 
-  .banner-box {
-    margin: auto;
-  }
+    .nav-list {
+        background-color: #10c9c3;
+        height: 100vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
 
-  .section-sub-heading {
-    line-height: 1.2;
-  }
+    .nav-list li {
+        padding:10px 0;
+        border-bottom: 1px solid #252525;
+    }
+    .nav.active {
+        visibility: visible;
+        left: 0;
+    }
 
-  .skill-left::after {
-    width: 0;
-  }
+    .menu-icon-close.active {
+        visibility: visible;
+    }
 
-  .skill-left {
-    width: 100%;
-  }
+    .banner {
+        margin-top: 0;
+    }
 
-  .content-stat-wrap {
-    display: block;
-  }
+    .banner-box {
+        margin: auto;
+    }
 
-  .content-career-top, .content-career-bottom{
-    display: block;
-  }
+    .section-sub-heading {
+        line-height: 1.2;
+    }
 
-  .career-box {
-    width: 100%;
-  }
+    .skill-left::after {
+        width: 0;
+    }
 
-  .content-testimonials {
-    font-size: 15px;
-    padding: 5px 5px;
-  }
+    .skill-left {
+        width: 100%;
+    }
 
-  .badge-logo-wrap {
-    display: block;
-  }
+    .content-stat-wrap {
+        display: block;
+    }
 
-  .badge-logo {
-    width: 100%;
-  }
+    .grid-top {
+        display: block;
+    }
 
-  .badge-logo1 {
-    text-align: center;  
-  }
+    .grid-bottom {
+        display: block;
+    }
 
-  .badge-logo2 {
-    margin-left: 50px;
-  }
+    .grid-box {
+        width: 100%;
+    }
 
-  .badge-logo3 {
-    margin-left: 60px;
-  }
+    .content-career-top, .content-career-bottom{
+        display: block;
+    }
 
-  .badge-logo4 {
-    text-align: center;
-  }
+    .career-box {
+        width: 100%;
+    }
 
-  .footer-wrap {
-    display: block;
-    text-align: center;
-  }
+    .content-testimonials {
+        font-size: 15px;
+        padding: 5px 5px;
+    }
 
-  .footer-infor {
-    margin-right: 0;
-  }
+    .badge-logo-wrap {
+        display: block;
+        width: 100%;
+    }
 
-  .footer-contact {
-    margin-right: 0;
-  }
+    .badge-logo {
+   
+    }
 
-  .footer-heading {
-    margin-right: 0;
-  }
+    .footer-wrap {
+        display: block;
+        text-align: center;
+    }
 
-  .footer-choice {
-    margin-right: 0;
-  }
+    .footer-infor {
+        margin-right: 0;
+    }
+
+    .footer-title {
+        margin-top: 10px;
+        justify-content: space-evenly
+    }
+    .footer-contact {
+        margin-right: 0;
+    }
+
+    .footer-heading {
+        margin-right: 0;
+    }
+
+    .footer-choice {
+        margin-right: 0;
+    }
 }
