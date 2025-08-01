@@ -15,7 +15,7 @@ mobileMenu.addEventListener("click",function() {
         iconClose.classList.remove("show");
     }
 });
-
+/*
 const navList = document.querySelector(".nav__list");
 navList.addEventListener("click",function() {
     nav.classList.toggle("active");
@@ -29,6 +29,7 @@ navList.addEventListener("click",function() {
         iconClose.classList.remove("show");
     }
 })
+*/
 //END JS Menu
 
 //START JS Grid
@@ -38,6 +39,8 @@ gridLoad.addEventListener("click",function() {
     bonusGrid.classList.toggle("load");
 })
 //END JS Grid
+
+//STRAT Slide
  var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       centeredSlides: true,
@@ -54,6 +57,7 @@ gridLoad.addEventListener("click",function() {
         prevEl: ".swiper-button-prev",
       },
 });
+//END Slide
 
 //START JS Video
 const buttonVideo = document.getElementById("video-mp4");
