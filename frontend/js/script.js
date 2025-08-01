@@ -38,6 +38,22 @@ gridLoad.addEventListener("click",function() {
     bonusGrid.classList.toggle("load");
 })
 //END JS Grid
+ var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+});
 
 //START JS Video
 const buttonVideo = document.getElementById("video-mp4");

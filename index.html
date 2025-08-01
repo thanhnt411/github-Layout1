@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="https://themify.me/themify-icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <div class="main">
@@ -297,13 +298,31 @@
         <!--END Content-career-->
 
         <!--START Content-testimonials-->
-        <div class="testimonials" id="section-testimonials">
-          <p class="testimonials__mess">
-            "Out standing job and exceeded all expectations. It was a pleasure<br>
-            to work with them on a sizable first project and am looking<br>
-            forward to stat-number the next one asap."
-          </p>
-          <p class="testimonials__name">MICHAEL HOPKINS</p>
+        <div class="testimonials  swiper mySwiper" id="section-testimonials">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="testimonials__mess">
+                "Out standing job and exceeded all expectations. It was a pleasure<br>
+                to work with them on a sizable first project and am looking<br>
+                forward to stat-number the next one asap."
+              </p>
+              <p class="testimonials__name">MICHAEL HOPKINS</p>
+            </div>
+
+            <div class="swiper-slide">
+              <p class="testimonials__mess">
+                "Out standing job and exceeded all expectations. It was a pleasure<br>
+                to work with them on a sizable first project and am looking<br>
+                forward to stat-number the next one asap."
+              </p>
+              <p class="testimonials__name">MICHAEL HOPKINS</p>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="swiper-pagination"></div>
         </div>
         <!--END Content-testimonials-->
 
@@ -411,4 +430,5 @@
     </div>
   </body>
   <script src="./frontend/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </html>

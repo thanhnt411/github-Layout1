@@ -22,7 +22,7 @@
     left: 0;
     right: 0;
     padding-top: 20px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header__wrap {
@@ -72,21 +72,6 @@
     color: #10c9c3;
 }
 
-.nav__menu--mobile {
-    padding: 10px;
-}
-.nav__menu--mobile li {
-    list-style: none;
-    padding: 8px;
-    border-bottom: 1px solid #252525;
-}
-
-.nav__menu--mobile li a{
-    text-decoration: none;
-    color: #1d1d1d;
-    font-size: 15px;
-    transition: 0.2s;
-} 
 /*END Header*/
 
 /*START Banner*/
@@ -152,7 +137,7 @@
 .skills {
     background-color: #f8f9f9;
     position: relative;
-    z-index: 999;
+    z-index: 2;
 }
 
 .skill__box {
@@ -396,7 +381,7 @@
 
 .testimonials__mess {
     font-size: 29px;
-    line-height: 37 px;
+    line-height: 37px;
     margin-bottom: 30px;
 }
 /*END Content-testimonials*/
@@ -591,16 +576,18 @@
     }
 
     .nav__list {
-        background-color: #10c9c3;
+        background-color: #ffffff;
         height: 100vh;
-        width: 50%;
+        width: 65%;
         display: flex;
         flex-direction: column;
+        padding: 0 30px;
     }
 
     .nav__list li {
         padding:10px 0;
-        border-bottom: 1px solid #252525;
+        border-bottom: 1px solid #838383;
+        
     }
     .nav.active {
         visibility: visible;
