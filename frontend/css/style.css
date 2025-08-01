@@ -254,7 +254,7 @@
 }
 
 .grid__box:hover {
-    background-color: #252525;
+    background-color: #252525 !important;
 }
 
 .grid__icon:hover {
@@ -375,14 +375,27 @@
 .testimonials {
     background-color: #10c9c3;
     color: #fff;
+}
+
+.swiper-wrapper {
+    padding: 165px 0;
     text-align: center;
-    padding: 165px;
 }
 
 .testimonials__mess {
     font-size: 29px;
     line-height: 37px;
     margin-bottom: 30px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+  opacity: 1;
 }
 /*END Content-testimonials*/
 
@@ -526,6 +539,26 @@
 .footer__name-app li a {
     color: #fff;
     text-decoration: none;
+}
+
+.chat {
+    height: 70px;
+    width: 70px;
+    background-color: 	#0084FF;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.chat__icon {
+    position: absolute;
+    font-size: 30px;
 }
 /*END Footer*/
 
